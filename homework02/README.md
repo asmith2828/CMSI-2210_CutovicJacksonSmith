@@ -18,7 +18,7 @@ Answers to the following questions can be found in the information on the course
 7. Is a compiler a translator?
 8. Is an assembler a translator?
 9. What is the command to list out the contents of a directory on a mac terminal window?
-10. What does the "C" function atof() do?
+10. What does the "C" function atof() do? It turns a character string into a floating point value.
 11. What are the bottom two layers of a computer system? Give a brief desciption of each.
 12. What are the three "steps" of the Von Neumann Architecture?
    First the control unit retrieves the following instruction from memory, the instruction's    address is stored in the program counter. The instruction is then decoded so the microcode can comprehend what it needs to do. This can include more retrievals from main memory to gather any more instructions needed, that are then placed into registers in the CPU. Lastly, the ALU uses the decoded instructions to execute the instructions. The results of this may end up being placed back in main memory or in another register.
@@ -40,5 +40,6 @@ Answers to the following questions can be found in the information on the course
   - All questions worth one point each
   - Total possible points: 20
   - Remember to show your work for partial credit on calculation problems
+
 
 

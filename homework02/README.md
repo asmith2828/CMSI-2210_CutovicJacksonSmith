@@ -11,12 +11,12 @@ Answers to the following questions can be found in the information on the course
 1. What is a "computer system"?
 2. What are some of the parts of a computer system?
 3. What is the difference between a compiled language and an intepreted language?
-4. Is "C" a compiled language?
+4. Is "C" a compiled language? Yes it is, but it is not compiled like Java, it is compiled directly.
 5. Who invented the "C" language?
    Dennis Ritchie created the "C" language.
 6. How long has "C" been in use?
-7. Is a compiler a translator?
-8. Is an assembler a translator?
+7. Is a compiler a translator? Yes it is.
+8. Is an assembler a translator? Yes, it translates from assembly language into machine language.
 9. What is the command to list out the contents of a directory on a mac terminal window?
 10. What does the "C" function atof() do? It turns a character string into a floating point value.
 11. What are the bottom two layers of a computer system? Give a brief desciption of each.
@@ -40,6 +40,7 @@ Answers to the following questions can be found in the information on the course
   - All questions worth one point each
   - Total possible points: 20
   - Remember to show your work for partial credit on calculation problems
+
 
 
 

@@ -1,30 +1,30 @@
 
 
 Evaluation Criteria ~ homework02
-CMSI 2210 Section 01 Fall 2021
+CMSI 2210 Section 02 Fall 2025
 =================================
 
 BOOK PROBLEMS
-   Question 01    1 pt.
-   Question 02    1 pt.
-   Question 03    1 pt.
-   Question 04    1 pt.
-   Question 05    1 pt.
-   Question 06    1 pt.
-   Question 07    1 pt.
-   Question 08    1 pt.
-   Question 09    1 pt.
-   Question 10    1 pt.
-   Question 11    1 pt.
-   Question 12    1 pt.
-   Question 13    1 pt.
-   Question 14    1 pt.
-   Question 15    1 pt.
-   Question 16    1 pt.
-   Question 17    1 pt.
-   Question 18    1 pt.
-   Question 19    1 pt.
-   Question 20    1 pt.
+   Question 01    1/1 pt.
+   Question 02    1/1 pt.
+   Question 03    1/1 pt.
+   Question 04    1/1 pt.
+   Question 05    1/1 pt.
+   Question 06    1/1 pt.
+   Question 07    1/1 pt.
+   Question 08    1/1 pt.
+   Question 09    1/1 pt.
+   Question 10    1/1 pt.
+   Question 11    1/1 pt.
+   Question 12    1/1 pt.
+   Question 13    1/1 pt.
+   Question 14    1/1 pt.
+   Question 15    1/1 pt.
+   Question 16    1/1 pt.
+   Question 17    1/1 pt.
+   Question 18    1/1 pt.
+   Question 19    1/1 pt.
+   Question 20    1/1 pt.
 
 Total possible points 20
 
@@ -36,3 +36,10 @@ TOTAL EARNED POINTS:
 ========================================================
 SPECIFIC COMMENTS/FEEDBACK:
 
+Problem 1, this answer is a bit simplistic ~ a computer system is actually
+   much more than what you have stated here, but you're not wrong... :)
+
+problem 9, don't forget that there are LOTS of options you can use with the
+   "ls" command to get more information and/or format the output!
+
+Nice job!

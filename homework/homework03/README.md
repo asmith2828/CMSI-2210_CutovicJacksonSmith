@@ -21,13 +21,13 @@ Remember that the prefix "0x" or "0X" indicates that a value is shown in hexadec
 The problems in this section are very straightforward and should not be hard ~ you'll get good practice here!
       <ol><li>Hex FAC3 in binary is: 111101011000011
           <li>Hex FAC3 as an unsigned decimal is: 64,195
-          <li>Hex FAC3 as a signed decimal is: -1341
-          <li>Hex 0064 in binary is:
-          <li>Hex 0064 as an unsigned decimal is:
-          <li>Hex 0064 as a signed decimal is:
-          <li>Hex 8000 in binary is:
-          <li>Hex 8000 as an unsigned decimal is:
-          <li>Hex 8000 as a signed decimal is:
+          <li>Hex FAC3 as a signed decimal is: -1,341
+          <li>Hex 0064 in binary is: 00000001100100
+          <li>Hex 0064 as an unsigned decimal is: 100
+          <li>Hex 0064 as a signed decimal is: -65,436
+          <li>Hex 8000 in binary is: 1000000000000000
+          <li>Hex 8000 as an unsigned decimal is: 32,768
+          <li>Hex 8000 as a signed decimal is: -32,768
           <li>Decimal 8000 encoded in 16-bits (unsigned) is in hex:
           <li>Decimal 8000 encoded in 16-bits (signed) is in hex:
           <li>Decimal -11 encoded in 16-bits (signed) is in hex:
@@ -81,4 +81,5 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 

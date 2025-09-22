@@ -19,9 +19,9 @@ Remember that the prefix "0x" or "0X" indicates that a value is shown in hexadec
 ## Problems
 
 The problems in this section are very straightforward and should not be hard ~ you'll get good practice here!
-      <ol><li>Hex FAC3 in binary is:
-          <li>Hex FAC3 as an unsigned decimal is:
-          <li>Hex FAC3 as a signed decimal is:
+      <ol><li>Hex FAC3 in binary is: 111101011000011
+          <li>Hex FAC3 as an unsigned decimal is: 64,195
+          <li>Hex FAC3 as a signed decimal is: -1341
           <li>Hex 0064 in binary is:
           <li>Hex 0064 as an unsigned decimal is:
           <li>Hex 0064 as a signed decimal is:
@@ -81,3 +81,4 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+

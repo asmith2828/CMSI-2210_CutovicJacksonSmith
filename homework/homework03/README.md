@@ -33,10 +33,10 @@ The problems in this section are very straightforward and should not be hard ~ y
           <li>Decimal -11 encoded in 16-bits (signed) is in hex: 0x FFF5
           <li>Decimal -32717 encoded in 16-bits (signed) is in hex: 
           <li>Binary 10111101 in hex is: 0x 8033
-          <li>Binary 1011110100000001 as an unsigned decimal is:
-          <li>Binary 1011110100000001 as a signed decimal is:
-          <li>If we had 20-bit registers, the smallest signed decimal integer value would be:
-          <li>If we had 20-bit registers, the largest signed decimal integer value would be:
+          <li>Binary 1011110100000001 as an unsigned decimal is: 48,385
+          <li>Binary 1011110100000001 as a signed decimal is: -17,151
+          <li>If we had 20-bit registers, the smallest signed decimal integer value would be: -524,288
+          <li>If we had 20-bit registers, the largest signed decimal integer value would be: 534,287
           <li>The modular sum of 16-bit hex values 3511 + 4FFC is:
           <li>The saturated sum of 16-bit hex values 3511 + 4FFC is:
           <li>The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N):
@@ -81,6 +81,7 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

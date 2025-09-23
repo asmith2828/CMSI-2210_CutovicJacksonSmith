@@ -29,10 +29,10 @@ The problems in this section are very straightforward and should not be hard ~ y
           <li>Hex 8000 as an unsigned decimal is: 32,768
           <li>Hex 8000 as a signed decimal is: -32,768
           <li>Decimal 8000 encoded in 16-bits (unsigned) is in hex: 0x 1F40
-          <li>Decimal 8000 encoded in 16-bits (signed) is in hex:
-          <li>Decimal -11 encoded in 16-bits (signed) is in hex:
-          <li>Decimal -32717 encoded in 16-bits (signed) is in hex:
-          <li>Binary 10111101 in hex is:
+          <li>Decimal 8000 encoded in 16-bits (signed) is in hex: 0x 1F40
+          <li>Decimal -11 encoded in 16-bits (signed) is in hex: 0x FFF5
+          <li>Decimal -32717 encoded in 16-bits (signed) is in hex: 
+          <li>Binary 10111101 in hex is: 0x 8033
           <li>Binary 1011110100000001 as an unsigned decimal is:
           <li>Binary 1011110100000001 as a signed decimal is:
           <li>If we had 20-bit registers, the smallest signed decimal integer value would be:
@@ -81,6 +81,7 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

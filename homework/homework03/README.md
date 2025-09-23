@@ -39,8 +39,8 @@ The problems in this section are very straightforward and should not be hard ~ y
           <li>If we had 20-bit registers, the largest signed decimal integer value would be: 524,287
           <li>The modular sum of 16-bit hex values 3511 + 4FFC is: 0x 850D
           <li>The saturated sum of 16-bit hex values 3511 + 4FFC is: 0x 850D
-          <li>The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N):
-          <li>The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N):
+          <li>The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N): N
+          <li>The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N): Y
       </ol>
 
 These problems give you more to think about with the concepts of number conversion and arithmetic.
@@ -81,6 +81,7 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

@@ -19,24 +19,24 @@ Remember that the prefix "0x" or "0X" indicates that a value is shown in hexadec
 ## Problems
 
 The problems in this section are very straightforward and should not be hard ~ you'll get good practice here!
-      <ol><li>Hex FAC3 in binary is: 111101011000011
+      <ol><li>Hex FAC3 in binary is: 1111101011000011
           <li>Hex FAC3 as an unsigned decimal is: 64,195
           <li>Hex FAC3 as a signed decimal is: -1,341
           <li>Hex 0064 in binary is: 00000001100100
           <li>Hex 0064 as an unsigned decimal is: 100
-          <li>Hex 0064 as a signed decimal is: -65,436
+          <li>Hex 0064 as a signed decimal is: 100
           <li>Hex 8000 in binary is: 1000000000000000
           <li>Hex 8000 as an unsigned decimal is: 32,768
           <li>Hex 8000 as a signed decimal is: -32,768
           <li>Decimal 8000 encoded in 16-bits (unsigned) is in hex: 0x 1F40
           <li>Decimal 8000 encoded in 16-bits (signed) is in hex: 0x 1F40
           <li>Decimal -11 encoded in 16-bits (signed) is in hex: 0x FFF5
-          <li>Decimal -32717 encoded in 16-bits (signed) is in hex: 
-          <li>Binary 10111101 in hex is: 0x 8033
+          <li>Decimal -32717 encoded in 16-bits (signed) is in hex: 0x 8033
+          <li>Binary 10111101 in hex is: 0x BD
           <li>Binary 1011110100000001 as an unsigned decimal is: 48,385
           <li>Binary 1011110100000001 as a signed decimal is: -17,151
           <li>If we had 20-bit registers, the smallest signed decimal integer value would be: -524,288
-          <li>If we had 20-bit registers, the largest signed decimal integer value would be: 534,287
+          <li>If we had 20-bit registers, the largest signed decimal integer value would be: 524,287
           <li>The modular sum of 16-bit hex values 3511 + 4FFC is:
           <li>The saturated sum of 16-bit hex values 3511 + 4FFC is:
           <li>The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N):
@@ -81,6 +81,7 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

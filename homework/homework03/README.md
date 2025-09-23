@@ -44,18 +44,18 @@ The problems in this section are very straightforward and should not be hard ~ y
       </ol>
 
 These problems give you more to think about with the concepts of number conversion and arithmetic.
-      <ol><li>The modular sum of 16-bit hex values 6159 + F702 is:
-          <li>The saturated sum of 16-bit hex values 6159 + F702 is:
-          <li>The 16-bit operation 0x6159 + 0xF702 has a carry (Y or N):
-          <li>The 16-bit operation 0x6159 + 0xF702 has a overflows (Y or N):
-          <li>The modular sum of 16-bit hex values EEEE + C00C is:
-          <li>The saturated sum of 16-bit hex values EEEE + C00C is:
-          <li>The 16-bit operation 9EEE + AB0C has a carry (Y or N):
-          <li>The 16-bit operation 9EEE + AB0C has a overflows (Y or N):
-          <li>The negation of 16-bit word 0xB00F is:
+      <ol><li>The modular sum of 16-bit hex values 6159 + F702 is: 0x585B
+          <li>The saturated sum of 16-bit hex values 6159 + F702 is: 0x585B
+          <li>The 16-bit operation 0x6159 + 0xF702 has a carry (Y or N): Y
+          <li>The 16-bit operation 0x6159 + 0xF702 has a overflows (Y or N): N
+          <li>The modular sum of 16-bit hex values EEEE + C00C is: 0xAEFA
+          <li>The saturated sum of 16-bit hex values EEEE + C00C is: 0xAEFA
+          <li>The 16-bit operation 9EEE + AB0C has a carry (Y or N): Y
+          <li>The 16-bit operation 9EEE + AB0C has a overflows (Y or N): Y
+          <li>The negation of 16-bit word 0xB00F is: 0x4ff1
           <li>The negation of 16-bit word 0x2232 is:
           <li>The negation of 16-bit word 0x8000 is:
-          <li>The negation of 32-bit word 0xFFF329BA is:
+          <li>The negation of 32-bit word 0xFFF329BA is: 0x000CD646
           <li>96.03125 as a 32-bit float, in hex is:
           <li>-16777216 as a 32-bit float, in hex is:
           <li>Hex 43700000, when interpreted as an IEEE-754 pattern, is in decimal:
@@ -81,6 +81,7 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

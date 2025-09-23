@@ -63,13 +63,13 @@ These problems give you more to think about with the concepts of number conversi
       </ol>
 
 These problems are difficult and will require you to do some research to get the answers.  <strong>They are considered optional</strong> and you will get extra credit for getting them correct, one point per problem.  For any you attempt for which the answer is <em><u>incorrect</u></em>, you will NOT be penalized, you just won't get any credit for them.
-      <ol><li>The largest finite IEEE-754 single precision float, in hex is:
+      <ol><li>The largest finite IEEE-754 single precision float, in hex is: 0x7F7FFFFF
           <li>The smallest finite IEEE-754 single precision float, in hex is:
           <li>The largest nonzero negative IEEE-754 single precision float, in hex is:
           <li>The smallest nonezero positive IEEE-754 single precision float, in hex is:
           <li>-5.125 X 2<sup>90</sup> as a 32-bit float, in hex is:
           <li>2<sup>-138</sup> as a 32-bit float, in hex is:
-          <li>1.5 X 2<sup>-143</sup> as a 32-bit float, in hex is:
+          <li>1.5 X 2<sup>-143</sup> as a 32-bit float, in hex is: 0x00000060
           <li>OPTIONAL &mdash; Try this for a challenge, a puzzle, or the experience:<br />
                   Hex C059000000000000, when iterpreted as an IEEE-754 pattern, is in decimal:
       </ol>
@@ -81,6 +81,7 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

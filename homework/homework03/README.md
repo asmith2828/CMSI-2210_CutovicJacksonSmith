@@ -28,17 +28,17 @@ The problems in this section are very straightforward and should not be hard ~ y
           <li>Hex 8000 in binary is: 1000000000000000
           <li>Hex 8000 as an unsigned decimal is: 32,768
           <li>Hex 8000 as a signed decimal is: -32,768
-          <li>Decimal 8000 encoded in 16-bits (unsigned) is in hex: 0x 1F40
-          <li>Decimal 8000 encoded in 16-bits (signed) is in hex: 0x 1F40
-          <li>Decimal -11 encoded in 16-bits (signed) is in hex: 0x FFF5
-          <li>Decimal -32717 encoded in 16-bits (signed) is in hex: 0x 8033
-          <li>Binary 10111101 in hex is: 0x BD
+          <li>Decimal 8000 encoded in 16-bits (unsigned) is in hex: 0x1F40
+          <li>Decimal 8000 encoded in 16-bits (signed) is in hex: 0x1F40
+          <li>Decimal -11 encoded in 16-bits (signed) is in hex: 0xFFF5
+          <li>Decimal -32717 encoded in 16-bits (signed) is in hex: 0x8033
+          <li>Binary 10111101 in hex is: 0xBD
           <li>Binary 1011110100000001 as an unsigned decimal is: 48,385
           <li>Binary 1011110100000001 as a signed decimal is: -17,151
           <li>If we had 20-bit registers, the smallest signed decimal integer value would be: -524,288
           <li>If we had 20-bit registers, the largest signed decimal integer value would be: 524,287
-          <li>The modular sum of 16-bit hex values 3511 + 4FFC is: 0x 850D
-          <li>The saturated sum of 16-bit hex values 3511 + 4FFC is: 0x 850D
+          <li>The modular sum of 16-bit hex values 3511 + 4FFC is: 0x850D
+          <li>The saturated sum of 16-bit hex values 3511 + 4FFC is: 0x850D
           <li>The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N): N
           <li>The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N): Y
       </ol>
@@ -53,8 +53,8 @@ These problems give you more to think about with the concepts of number conversi
           <li>The 16-bit operation 9EEE + AB0C has a carry (Y or N): Y
           <li>The 16-bit operation 9EEE + AB0C has a overflows (Y or N): Y
           <li>The negation of 16-bit word 0xB00F is: 0x4ff1
-          <li>The negation of 16-bit word 0x2232 is:
-          <li>The negation of 16-bit word 0x8000 is:
+          <li>The negation of 16-bit word 0x2232 is: 0xECDD
+          <li>The negation of 16-bit word 0x8000 is: 0x8000
           <li>The negation of 32-bit word 0xFFF329BA is: 0x000CD646
           <li>96.03125 as a 32-bit float, in hex is:
           <li>-16777216 as a 32-bit float, in hex is:
@@ -81,6 +81,7 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

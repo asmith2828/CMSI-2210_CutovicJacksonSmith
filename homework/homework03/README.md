@@ -584,7 +584,43 @@ Convert to hex:<br />
 <br>
 
 **45. 1.5 X 2⁻¹⁴³ as a 32-bit float, in hex is:**<br />
-0x00000060
+Convert 1.5 to binary:<br />
+Integer part: 1₁₀ = 1₂<br />
+Fractional part: 0.5₁₀<br />
+
+Convert fractional part using multiplication by 2:<br />
+0.5 × 2 = 1.0 → integer part: 1<br />
+1.0 reached exactly → no fractional part left; stop<br />
+Reading integer parts downward: 0.1₂<br />
+
+Combined: 1₁₀ + 0.5₁₀ = 1₂ + 0.1₂ = 1.1₂<br />
+
+Scientific notation:<br />
+1.5 × 2⁻¹⁴³ = 1.1₂ × 2⁻¹⁴³<br />
+
+Check to see if within range:<br />
+Normal range: 2⁻¹²⁶ to 2¹²⁷<br />
+Number: 1.5 × 2⁻¹⁴³<br />
+2⁻¹⁴³ < 2⁻¹²⁶ (because -143 < -126) → subnormal<br />
+
+For subnormal numbers:<br />
+Exponent field: 00000000₂ (0)<br />
+Actual exponent: -126<br />
+Adjust mantissa: 1.1₂ × 2⁻¹⁴³ = 0.000...0011₂ × 2⁻¹²⁶<br />
+
+Calculate bit position:<br />
+Shifting 1.1₂ right by (-143) - (-126) = 17 positions shifted right<br />
+Mantissa: 00000000000000000000110₂<br />
+
+Combine components:<br />
+Sign: 0, Exponent: 00000000₂, Mantissa: 00000000000000000000110₂<br />
+0 00000000 00000000000000000000110₂<br />
+
+Convert to hex:<br />
+00000000 00000000 00000000 01100000₂<br />
+= 00000060₁₆<br />
+
+= 0x00000060
 
 <br>
 
@@ -600,6 +636,7 @@ Convert to hex:<br />
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

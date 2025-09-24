@@ -536,7 +536,7 @@ Sign bit = 1: -(7.96875₁₀)<br />
 **39. The largest finite IEEE-754 single precision float, in hex is:**<br />
 For largest finite positive value:<br />
 Sign bit: 0 (positive)<br />
-Exponent: 11111110₂ = 254₁₀ (largest: 11111111₂ = 255₁₀)<br />
+Exponent: 11111110₂ = 254₁₀<br />
 Mantissa: 11111111111111111111111₂ (all 23 bits set to 1)<br />
 
 Combine components:<br />
@@ -550,10 +550,48 @@ Convert to hex:<br />
 
 <br>
 
-**40-46. Additional IEEE-754 Problems:**<br />
-*[These are marked as optional extra credit and require advanced IEEE-754 knowledge]*
+**40. The smallest finite IEEE-754 single precision float, in hex is:**<br />
+For smallest finite negative value:<br />
+Sign bit: 1 (negative)<br />
+Exponent: 11111110₂ = 254₁₀<br />
+Mantissa: 11111111111111111111111₂ (all 23 bits set to 1)<br />
+
+Combine components:<br />
+1 11111110 11111111111111111111111₂<br />
+
+Convert to hex:<br />
+11111111 01111111 11111111 11111111₂<br />
+= FF7FFFFF₁₆<br />
+
+= 0xFF7FFFFF
 
 <br>
+
+**41. The largest nonzero negative IEEE-754 single precision float, in hex is:**<br />
+
+<br>
+
+**42. The smallest nonzero positive IEEE-754 single precision float, in hex is:**<br />
+
+<br>
+
+**43. -5.125 X 2⁹⁰ as a 32-bit float, in hex is:**<br />
+
+<br>
+
+**44. 2⁻¹³⁸ as a 32-bit float, in hex is:**<br />
+
+<br>
+
+**45. 1.5 X 2⁻¹⁴³ as a 32-bit float, in hex is:**<br />
+0x00000060
+
+<br>
+
+**46. Hex C059000000000000, when interpreted as an IEEE-754 pattern, is in decimal:**<br />
+
+<br>
+
 
 ## Evaluation Criteria for Homework 03
 ### "CALCULATION" PROBLEMS
@@ -562,6 +600,7 @@ Convert to hex:<br />
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

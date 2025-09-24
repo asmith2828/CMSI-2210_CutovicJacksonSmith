@@ -56,10 +56,10 @@ These problems give you more to think about with the concepts of number conversi
           <li>The negation of 16-bit word 0x2232 is: 0xECDD
           <li>The negation of 16-bit word 0x8000 is: 0x8000
           <li>The negation of 32-bit word 0xFFF329BA is: 0x000CD646
-          <li>96.03125 as a 32-bit float, in hex is:
-          <li>-16777216 as a 32-bit float, in hex is:
-          <li>Hex 43700000, when interpreted as an IEEE-754 pattern, is in decimal:
-          <li>Hex C0FF0000, when interpreted as an IEEE-754 pattern, is in decimal:
+          <li>96.03125 as a 32-bit float, in hex is: 0x42C01000
+          <li>-16777216 as a 32-bit float, in hex is: 0xCB800000
+          <li>Hex 43700000, when interpreted as an IEEE-754 pattern, is in decimal: 240.0
+          <li>Hex C0FF0000, when interpreted as an IEEE-754 pattern, is in decimal: -7.96875
       </ol>
 
 These problems are difficult and will require you to do some research to get the answers.  <strong>They are considered optional</strong> and you will get extra credit for getting them correct, one point per problem.  For any you attempt for which the answer is <em><u>incorrect</u></em>, you will NOT be penalized, you just won't get any credit for them.
@@ -81,6 +81,7 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

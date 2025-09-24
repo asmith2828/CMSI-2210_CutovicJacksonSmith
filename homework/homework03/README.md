@@ -67,11 +67,11 @@ These problems are difficult and will require you to do some research to get the
           <li>The smallest finite IEEE-754 single precision float, in hex is: 0xFF7FFFFF (same as above but the sign bit is a 1)
           <li>The largest nonzero negative IEEE-754 single precision float, in hex is: 0x80000001
           <li>The smallest nonezero positive IEEE-754 single precision float, in hex is: 0x00000001
-          <li>-5.125 X 2<sup>90</sup> as a 32-bit float, in hex is:
-          <li>2<sup>-138</sup> as a 32-bit float, in hex is:
+          <li>-5.125 X 2<sup>90</sup> as a 32-bit float, in hex is: 0xEDA40000
+          <li>2<sup>-138</sup> as a 32-bit float, in hex is: 0x00000800
           <li>1.5 X 2<sup>-143</sup> as a 32-bit float, in hex is: 0x00000060
           <li>OPTIONAL &mdash; Try this for a challenge, a puzzle, or the experience:<br />
-                  Hex C059000000000000, when iterpreted as an IEEE-754 pattern, is in decimal:
+                  Hex C059000000000000, when iterpreted as an IEEE-754 pattern, is in decimal: -100.0
       </ol>
 
 ## Evaluation Criteria for Homework 03
@@ -81,6 +81,7 @@ These problems are difficult and will require you to do some research to get the
   - Remember to show your work for partial credit on calculation problems
   - Yes, you can get 0.5 point for trying, even if the answer is wrong
   
+
 
 
 

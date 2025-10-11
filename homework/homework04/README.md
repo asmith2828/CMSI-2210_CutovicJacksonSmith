@@ -30,17 +30,22 @@
 
 ### Register Operations
   3. Given a 32-bit register, write logic instructions to perform the following operations. For parts (c) and (f) assume an unsigned interpretation; for part (d) assume a signed interpretation.<br />
-    a. Clear all even numbered bits<br />
+a. Clear all even numbered bits<br />
       R = R & 0xAAAAAAAA
-    b. Set the last three bits<br />
+
+b. Set the last three bits<br />
       R = R | 7
-    c. Compute the remainder when divided by 8<br />
+    
+c. Compute the remainder when divided by 8<br />
       R = R & 0x7
-    d. Make the value -1<br />
+    
+d. Make the value -1<br />
       R = 0xFFFFFFFF
-    e. Complement the two highest order bits<br />
+    
+e. Complement the two highest order bits<br />
       R = R ^ 0xC0000000
-    f. Compute the largest multiple of 8 less than or equal to the value itself
+    
+f. Compute the largest multiple of 8 less than or equal to the value itself
       R = R & 0xFFFFFFF8
 
 ### Assembly Language Programming

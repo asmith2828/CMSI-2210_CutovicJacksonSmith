@@ -42,9 +42,9 @@ Y = ( A · C' )' <br>
 
 ***Problem 2 Response***
 
-Output: c = 1 if (a > b), else 0.
+Inputs: a1 a0 b1 b0
 
-Inputs: a1 a0 (signed a), b1 b0 (signed b)
+Output: c = 1 if (a > b), else 0
 
 c = (a1'·a0'·b1·b0') + (a1'·a0'·b1·b0) + (a1'·a0·b1'·b0') + (a1'·a0·b1·b0') + (a1'·a0·b1·b0) + (a1·a0·b1·b0')
 
@@ -187,8 +187,8 @@ end:    JMP end
 ***Problem 8 Response***
 
 ```assembly
-saved_accum:  0             ; Saved accumulator value
-saved_mem:    0             ; Saved memory value
+saved_accum: 0
+saved_mem: 0
 
         STORE [saved_accum]
         LOAD [0x30AA]
@@ -205,9 +205,9 @@ saved_mem:    0             ; Saved memory value
 ***Problem 9 Response***
 
 ```assembly
-        JLZ skip
-        JMP 0x837BBE1
-skip:
+        JGZ 0x837BBE1
+        JZ 0x837BBE1
+                            ; If A < 0 --> continues to next instruction
 ```
 
 ---
@@ -216,15 +216,15 @@ skip:
 
 ***Problem 10a Response***
 
-The values in r8 and r9 have been swapped without using any temporary storage location.
+The values in r8 and r9 have been swapped without using any temporary storage location/register, leaving r8 holding the original value of r9 and r9 holding the original value of r8.
 
 ---
 
 10b. Also state as briefly as possible why that effect happens.
 
-***Problem 19b Response***
+***Problem 10b Response***
 
-The
+This effect happens because the first XOR combines both values into one register; the following XORs use the property that XOR'ing with the same value twice cancels out, allowing each original value to be extracted and placed into the opposite register.
 
 ---
 

@@ -1,0 +1,61 @@
+
+
+Evaluation Criteria ~ homework05
+CMSI 2210 Section 02 Fall 2025
+=================================
+
+dec2bin
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   runs  tests    [10 pts.]     10 points earned
+dec2hex
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   32-bit tests   [ 5 pts.]      5 points earned
+   64-bit tests   [ 5 pts.]      5 points earned
+timesTables
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   runs  tests    [10 pts.]      8 points earned
+holdit
+   compiles       [ 5 pts.]      5 points earned
+   runs tests     [15 pts.]     15 points earned
+wordcount
+   compiles       [ 5 pts.]      5 points earned
+   error checks   [ 5 pts.]      5 points earned
+   runs tests     [10 pts.]     10 points earned
+
+ Total possible ~ 100 points
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 98/100 which is 98.00% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+Your timesTables program isn't quite right.  You are supposed to output a
+   table that is rows and columns to show the values.  For example, for
+   "N" of 3 it should look like:
+
+      | 1  2  3
+     -----------
+     1| 1  2  3
+     2| 2  4  6
+     3| 3  6  9
+
+Otherwise, VERY nice work on this assignment.
+
+========================================================
+SEMESTER SCORE SO FAR:
+
+   Homework01  100.00% of  5 points =  5.00 points
+   Homework02  100.00% of  5 points =  5.00 points
+   Homework03  104.00% of  5 points =  5.20 points
+   Homework04   94.44% of  5 points =  4.72 points
+   Homework05   98.00% of 10 points =  9.80 points
+                               total: 29.72 out of 30.00 = 99.07%
+                                which is an A-plus
+
+Your code looks VERY nice, your group obviously cares about the craft....

@@ -1,6 +1,8 @@
 ; findGCD.nasm
 ; reads two decimal integers from keyboard (stdin)
 ; computes their gcd and prints the result
+; answers problem 1, but not callable from C
+; Problem 2 code that is callable from C in file called "findGCDfromC.nasm"
 
 global _main
 extern printf

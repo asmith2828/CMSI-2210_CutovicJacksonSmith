@@ -1,83 +1,81 @@
-; findGCD.nasm
-; reads two decimal integers from keyboard (stdin)
-; computes their gcd and prints the result
-; answers problem 1, but not callable from C
-; Problem 2 code that is callable from C in file called "findGCDfromC.nasm"
+; ————————————————————————————————————————————————————————————————————————————————
+; A 64-bit program for MacOS that reads two integers and computes their GCD
+;
+; to assemble:    nasm -f macho64 findGCD.nasm
+; to link:        gcc findGCD.o -o findGCD
+; to run:         ./findGCD
+; ————————————————————————————————————————————————————————————————————————————————
 
 global _main
-extern printf
-extern gets
-extern atoi
-
-section .bss
-    buf1    resb 32
-    buf2    resb 32
+extern _printf
+extern _scanf
+extern _exit
 
 section .data
-    fmtOut  db "%d", 10, 0
+    input_fmt   db "%lld", 0          ; format for reading 64-bit integers
+    output_fmt  db "%lld", 10, 0      ; format for output with newline
+
+section .bss
+    num1    resq 1                     ; reserve space for first number
+    num2    resq 1                     ; reserve space for second number
 
 section .text
 
-; gcd(a, b) → eax
+; GCD function using Euclidean algorithm
+; Input: rdi = a, rsi = b
+; Output: rax = gcd(a, b)
 gcd:
-    push ebp
-    mov  ebp, esp
-
-    mov eax, [ebp+8]     ; a
-    mov ebx, [ebp+12]    ; b
-
-again:
-    cmp ebx, 0
-    je  done
-    xor edx, edx
-    div ebx
-    mov eax, ebx
-    mov ebx, edx
-    jmp again
-
-done:
-    pop ebp
+    push rbp
+    mov rbp, rsp
+    
+    mov rax, rdi                       ; rax = a
+    mov rbx, rsi                       ; rbx = b
+    
+.loop:
+    cmp rbx, 0                         ; if b == 0
+    je .done                           ; we're done
+    
+    xor rdx, rdx                       ; clear rdx for division
+    div rbx                            ; rax = rax / rbx, rdx = remainder
+    
+    mov rax, rbx                       ; a = b
+    mov rbx, rdx                       ; b = remainder
+    jmp .loop
+    
+.done:
+    pop rbp
     ret
 
-; main program
 _main:
-    push ebp
-    mov  ebp, esp
-
-    ; read first number
-    push buf1
-    call gets
-    add esp, 4
-
-    ; read second number
-    push buf2
-    call gets
-    add esp, 4
-
-    ; convert to ints
-    push buf1
-    call atoi
-    add esp, 4
-    mov esi, eax
-
-    push buf2
-    call atoi
-    add esp, 4
-    mov edi, eax
-
-    ; compute gcd(esi, edi)
-    push edi
-    push esi
+    push rbp
+    mov rbp, rsp
+    sub rsp, 16                        ; align stack (macOS requires 16-byte alignment)
+    
+    ; Read first number
+    lea rsi, [rel num1]                ; address of num1
+    lea rdi, [rel input_fmt]           ; format string
+    xor rax, rax                       ; no floating point args
+    call _scanf
+    
+    ; Read second number
+    lea rsi, [rel num2]                ; address of num2
+    lea rdi, [rel input_fmt]           ; format string
+    xor rax, rax
+    call _scanf
+    
+    ; Load the two numbers
+    mov rdi, [rel num1]                ; first argument in rdi
+    mov rsi, [rel num2]                ; second argument in rsi
+    
+    ; Call gcd function
     call gcd
-    add esp, 8
-
-    ; print result
-    push eax
-    push fmtOut
-    call printf
-    add esp, 8
-
-    mov esp, ebp
-    pop ebp
-    ret
-
+    
+    ; Print the result (result is in rax)
+    mov rsi, rax                       ; move result to rsi for printf
+    lea rdi, [rel output_fmt]          ; format string
+    xor rax, rax                       ; no floating point args
+    call _printf
+    
+    ; Exit cleanly
+    xor rdi, rdi                       ; exit code 0
+    call _exit

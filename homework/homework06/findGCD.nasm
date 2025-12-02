@@ -1,5 +1,11 @@
 ; ————————————————————————————————————————————————————————————————————————————————
-; A 64-bit program for MacOS that reads two integers and computes their GCD
+; filename: findGCD.nasm
+; A 64-bit program for x86 MacOS that reads two positive integers and computes their GCD
+;
+; Group Members:
+; Stefan Cutovic
+; Caroline Jackson
+; Aidan Smith
 ;
 ; to assemble:    nasm -f macho64 findGCD.nasm
 ; to link:        gcc findGCD.o -o findGCD
@@ -12,70 +18,61 @@ extern _scanf
 extern _exit
 
 section .data
-    input_fmt   db "%lld", 0          ; format for reading 64-bit integers
-    output_fmt  db "%lld", 10, 0      ; format for output with newline
+    inputFormat   db "%lld", 0
+    outputFormat  db "%lld", 10, 0
 
 section .bss
-    num1    resq 1                     ; reserve space for first number
-    num2    resq 1                     ; reserve space for second number
+    firstNumber    resq 1
+    secondNumber    resq 1
 
 section .text
 
-; GCD function using Euclidean algorithm
-; Input: rdi = a, rsi = b
-; Output: rax = gcd(a, b)
 gcd:
     push rbp
     mov rbp, rsp
     
-    mov rax, rdi                       ; rax = a
-    mov rbx, rsi                       ; rbx = b
+    mov rax, rdi                       ; rax --> a
+    mov rbx, rsi                       ; rbx --> b
     
-.loop:
-    cmp rbx, 0                         ; if b == 0
-    je .done                           ; we're done
+loop:
+    cmp rbx, 0                         ; if b is 0
+    je done                            ; we've reached the end
     
-    xor rdx, rdx                       ; clear rdx for division
-    div rbx                            ; rax = rax / rbx, rdx = remainder
+    xor rdx, rdx                       ; clears rdx for division
+    div rbx                            ; rax = rax/rbx, rdx is now remainder
     
-    mov rax, rbx                       ; a = b
-    mov rbx, rdx                       ; b = remainder
-    jmp .loop
+    mov rax, rbx                       ; a --> b
+    mov rbx, rdx                       ; b --> remainder
+    jmp loop
     
-.done:
+done:
     pop rbp
     ret
 
 _main:
     push rbp
     mov rbp, rsp
-    sub rsp, 16                        ; align stack (macOS requires 16-byte alignment)
+    sub rsp, 16                        ; 16-byte alignment, supposedly required by MacOS(?)
     
-    ; Read first number
-    lea rsi, [rel num1]                ; address of num1
-    lea rdi, [rel input_fmt]           ; format string
-    xor rax, rax                       ; no floating point args
+    lea rsi, [rel firstNumber]         ; destination for input
+    lea rdi, [rel inputFormat]         ; format specifier
+    xor rax, rax                       ; sets rax to 0 --> not passing any floating-point numbers
     call _scanf
     
-    ; Read second number
-    lea rsi, [rel num2]                ; address of num2
-    lea rdi, [rel input_fmt]           ; format string
+    lea rsi, [rel secondNumber]        ; address of secondNumber
+    lea rdi, [rel inputFormat]         ; formats string
     xor rax, rax
     call _scanf
     
-    ; Load the two numbers
-    mov rdi, [rel num1]                ; first argument in rdi
-    mov rsi, [rel num2]                ; second argument in rsi
+    mov rdi, [rel firstNumber]
+    mov rsi, [rel secondNumber]
     
-    ; Call gcd function
     call gcd
     
-    ; Print the result (result is in rax)
-    mov rsi, rax                       ; move result to rsi for printf
-    lea rdi, [rel output_fmt]          ; format string
-    xor rax, rax                       ; no floating point args
+    mov rsi, rax                       ; moves result for printf purposes
+    lea rdi, [rel outputFormat]
+    xor rax, rax
     call _printf
     
-    ; Exit cleanly
     xor rdi, rdi                       ; exit code 0
     call _exit
